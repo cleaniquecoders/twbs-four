@@ -11,15 +11,11 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Styles -->
         <style>
             body {
               padding-top: 5rem;
-            }
-            .starter-template {
-              padding: 3rem 1.5rem;
-              text-align: center;
             }
         </style>
     </head>
@@ -63,8 +59,6 @@
         </main><!-- /.container -->
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="{{ asset('js/jquery.slim.min.js') }}" ></script>
-        <script src="{{ asset('js/popper.min.js') }}" ></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}" ></script>
+        <script src="{{ asset('js/app.js') }}" ></script>
     </body>
 </html>

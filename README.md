@@ -22,7 +22,15 @@ CleaniqueCoders\TWBSFour\TWBSFourServiceProvider::class,
 'TWBSFour' => CleaniqueCoders\TWBSFour\TWBSFourFacade::class,
 ```
 
+4. Publishing assets
+
+```
+php artisan vendor:publish --tag=twbs-four --force
+```
+
 ## Usage 
+
+Refer to Official Twitter Bootstrap 4 [Documentation](https://getbootstrap.com/).
 
 ## License
 

@@ -26,12 +26,13 @@ class TWBSFourServiceProvider extends ServiceProvider
     public function boot()
     {
         /**
-         * Views
+         * Assets
          */
-        $this->loadViewsFrom(__DIR__ . '/resources/views', $this->package_tag);
         $this->publishes([
-            __DIR__ . '/resources/views' => resource_path('views/vendor/' . $this->publish_path),
-        ], $this->package_tag . '-views');
+            __DIR__ . '/stubs/public'    => public_path(),
+            __DIR__ . '/stubs/app'       => base_path(),
+            __DIR__ . '/resources/views' => resource_path('views'),
+        ], $this->package_tag);
     }
 
     /**
